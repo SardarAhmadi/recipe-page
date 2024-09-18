@@ -1,0 +1,141 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'poppins', sans-serif;
+  font-size: 10px;
+}
+
+body{
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: blanchedalmond;
+  padding: 10rem 0;
+}
+
+.container{
+  width: 70rem;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 3rem;
+  border-radius: 3rem;
+  background-color: white;
+}
+
+.container img{
+  width: 100%;
+  border-radius: 1rem;
+  margin-bottom: 2rem;
+}
+
+.container h1{
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.container p{
+  font-size: 1.2rem;
+}
+
+.container .box{
+  width: 100%;
+  height: auto;
+  background-color: rgba(255, 182, 193, 0.377);
+  border-radius: 1rem;
+  padding: 2rem;
+  margin: 2rem 0;
+}
+
+.container .box h1{
+  font-size: 2rem;
+  color: rgb(156, 17, 133);
+}
+
+.container .box ul{
+  list-style-type: disc;
+  margin-left: 2.5rem;
+}
+
+.container .box ul li{
+  margin-bottom: 1rem;
+}
+
+.container h2{
+  font-size: 2rem;
+  color: rgb(102, 10, 10);
+  margin-bottom: 1rem;
+}
+
+.container ul{
+  list-style-type: disc;
+  margin-left: 2rem;
+  margin-bottom: 1rem;
+}
+
+.container ul li{
+  margin-bottom: 0.5rem;
+}
+
+.container hr{
+  margin: 1rem 0;
+}
+
+.container ol{
+  list-style: 1;
+  margin-left: 2rem;
+  margin-bottom: 1rem;
+}
+
+.container ol li{
+  margin-bottom: 0.5rem;
+}
+
+.container .line{
+  display: flex;
+  padding: 1rem;
+  border-bottom: 2px solid rgba(128, 128, 128, 0.5);
+  width: 100%;
+}
+
+.container .line p{
+  width: 50%;
+}
+.container .line p:last-child{
+  color: rgb(102, 10, 10);
+  font-weight: bold;
+}
+
+.container .line:last-child{
+  border-bottom: none;
+}
+
+/* ######################################################################## */
+
+@media (max-width: 850px){
+  .container{
+    width: 50rem;
+  }
+}
+@media (max-width: 550px){
+  .container{
+    width: 40rem;
+  }
+  .container h1:nth-child(2){
+    font-size: 2.5rem;
+  }
+}
+@media (max-width: 450px){
+  body{
+    padding: 0;
+  }
+  .container{
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+  }
+}
